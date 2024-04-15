@@ -1,0 +1,12 @@
+<div class="profile-container">
+    <img [src]="user.photo" [alt]="'user.name' + ' ' + 'user.firstname'">
+    <h3>{{ user.firstName}} {{ user.name }}</h3>
+    <div class="hidden">
+        <button (click)="hide()">{{ hidden ? 'Show' : 'Hide' }}</button>
+        <h3 [hidden]="hidden">age : {{ user.age}}</h3>
+    </div>
+    <input type="text" [(ngModel)]="user.quote">
+    <blockquote>
+        {{ user.quote }}
+    </blockquote>
+</div>
