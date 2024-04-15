@@ -9,7 +9,8 @@ import { MenuComponent } from './menu/menu.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, 
+  imports: [
+    CommonModule, 
     RouterOutlet, 
     BlockComponent, 
     UserProfileComponent,
