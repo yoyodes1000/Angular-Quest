@@ -23,4 +23,6 @@ export class UserProfileComponent {
     return this.hidden = !this.hidden;
     console.log(this.hidden);
   }
+
+  
 }
