@@ -5,6 +5,8 @@ import { BlockComponent } from './block/block.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { MenuComponent } from './menu/menu.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,8 @@ import { MenuComponent } from './menu/menu.component';
     BlockComponent, 
     UserProfileComponent,
     DirectivesComponent,
-    MenuComponent
+    MenuComponent,
+    ReactiveFormsModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

@@ -1,14 +1,11 @@
 <form #formLogin="ngForm" (ngSubmit)="formLogin.valid && onSubmit()">
-    <div class="invisible">
-        Form submitted ? {{formLogin.submitted}}
-        Form valid ? {{formLogin.valid}}
-        Form invalid ? {{formLogin.invalid}}
-    </div>
+
 
     <fieldset>
         <label for="firstname">Firstname</label>
         <input id="firstname" name="firstname" type="text" [(ngModel)]="newLoginForm.firstname" #firstname=ngModel required minlength="3" maxlength="15">
     </fieldset>
+   
     <div *ngIf="formLogin.submitted && firstname.errors">
         <span *ngIf="firstname.errors?.['required']">Le nom est requis</span>
         <span *ngIf="firstname.errors?.['minlength']">La longueur minimale doit être supérieure à 3</span>
@@ -31,6 +28,7 @@
     </fieldset>
     <div *ngIf="formLogin.submitted && email.errors">
         <span *ngIf="email.errors?.['required']">Le mail est requis</span>
+        <span *ngIf="email.errors?.['email']">Le mail doit etre au bon format</span>
       </div>
 
     <fieldset>
