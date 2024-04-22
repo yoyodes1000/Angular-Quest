@@ -1,0 +1,17 @@
+<form #kittenForm="ngForm" (ngSubmit)="onSubmit()">
+    <fieldset class="formulaire">
+        <label for="name">Nom du chaton</label>
+        <input type="text" name="name" id="name" [(ngModel)]="kitten.name">
+
+        <label for="race">Race du chaton</label>
+        <input type="text" name="race" id="race" [(ngModel)]="kitten.race">
+
+        <label for="picture">Image du chaton</label>
+        <input type="text" name="picture" id="picture" [(ngModel)]="kitten.picture">
+
+        <label for="date">Date de naissance du chaton</label>
+        <input type="date" name="date" id="date" [(ngModel)]="kitten.date">
+        
+        <button type="submit">Créer un chaton😺</button>
+    </fieldset>
+</form>

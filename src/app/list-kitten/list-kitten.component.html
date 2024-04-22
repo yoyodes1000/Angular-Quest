@@ -1,0 +1,10 @@
+
+<div class="chaton">
+    <div class="chaton-card" *ngFor="let kitten of kittenList; let i = index">
+        <h2>Nom: {{ kitten.name }}</h2>
+        <h3>Race: {{ kitten.race }}</h3>
+        <h3>Date de naissance: {{ kitten.date }}</h3>
+        <img [src]="kitten.picture" [alt]="kitten.race">
+        <button (click)="onClick(i)">Envoyer au resto chinois</button>
+    </div>
+</div>

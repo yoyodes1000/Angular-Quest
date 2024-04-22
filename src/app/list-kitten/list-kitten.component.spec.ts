@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppCreateKittenComponent } from './app-create-kitten.component';
+import { ListKittenComponent } from './list-kitten.component';
 
-describe('AppCreateKittenComponent', () => {
-  let component: AppCreateKittenComponent;
-  let fixture: ComponentFixture<AppCreateKittenComponent>;
+describe('ListKittenComponent', () => {
+  let component: ListKittenComponent;
+  let fixture: ComponentFixture<ListKittenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppCreateKittenComponent]
+      imports: [ListKittenComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AppCreateKittenComponent);
+    fixture = TestBed.createComponent(ListKittenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppUserKittenComponent } from './app-user-kitten.component';
+import { CreateKittenComponent } from './create-kitten.component';
 
-describe('AppUserKittenComponent', () => {
-  let component: AppUserKittenComponent;
-  let fixture: ComponentFixture<AppUserKittenComponent>;
+describe('CreateKittenComponent', () => {
+  let component: CreateKittenComponent;
+  let fixture: ComponentFixture<CreateKittenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppUserKittenComponent]
+      imports: [CreateKittenComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AppUserKittenComponent);
+    fixture = TestBed.createComponent(CreateKittenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

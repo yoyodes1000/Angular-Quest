@@ -1,0 +1,17 @@
+img {
+    height: 150px;
+    width: auto;
+    padding-bottom: 10px;;
+}
+
+.chaton {
+    display: flex;
+}
+
+.chaton-card {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}

@@ -1,0 +1,5 @@
+<h2>Le dragon de Jade vous propose au menu ce soir</h2>
+<div class="resto" *ngFor="let menu of adoptedKitten">
+    <p>{{ menu.name }}</p>
+    <img [src]="menu.picture" alt="Bon app">
+</div>
